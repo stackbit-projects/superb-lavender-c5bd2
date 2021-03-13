@@ -1,0 +1,4558 @@
+{
+    "cmsType": "contentful",
+    "projectTitle": "Planty",
+    "staticDir": "static",
+    "pagesDir": "content",
+    "dataDir": "data",
+    "uploadDir": "images",
+    "pageContentFieldKey": "content",
+    "objectTypeKey": "type",
+    "models": [
+        {
+            "type": "config",
+            "name": "config",
+            "label": "Site Configuration",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "config_params",
+            "label": "Site Configuration Params",
+            "fieldNames": null
+        },
+        {
+            "type": "page",
+            "name": "home",
+            "label": "Home",
+            "fieldNames": null
+        },
+        {
+            "type": "page",
+            "name": "advanced",
+            "label": "Advanced Page",
+            "fieldNames": null
+        },
+        {
+            "type": "page",
+            "name": "store",
+            "label": "Store",
+            "fieldNames": null
+        },
+        {
+            "type": "page",
+            "name": "category",
+            "label": "Category",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "hero_section",
+            "label": "Hero Section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "featured_products_section",
+            "label": "Featured Products Section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "featured_categories_section",
+            "label": "Categories Section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "store_section",
+            "label": "Store Section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "promotion_section",
+            "label": "Promotion",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "testimonials_section",
+            "label": "Testimonials",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "testimonials_section_testimonials",
+            "label": "Testimonials Testimonials",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "testimonials_section_testimonials_author",
+            "label": "Testimonials Testimonials Author",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "header_section",
+            "label": "Header section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "faq_section",
+            "label": "FAQ Section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "faq_section_questions",
+            "label": "FAQ Section Questions",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "contact_section",
+            "label": "Contact Section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "bulletpoints_section",
+            "label": "Bulletpoints Section",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "bulletpoints_section_bulletpoints",
+            "label": "Bulletpoints Section Bulletpoints",
+            "fieldNames": null
+        },
+        {
+            "type": "page",
+            "name": "product",
+            "label": "Product",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "action",
+            "label": "Action",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "stackbit_page_meta",
+            "label": "Page meta data",
+            "fieldNames": null
+        },
+        {
+            "type": "object",
+            "name": "stackbit_page_meta_extra",
+            "label": "Page meta data Extra",
+            "fieldNames": null
+        }
+    ],
+    "contentTypes": [
+        {
+            "id": "action",
+            "name": "Action",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "url",
+                    "name": "URL",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Symbol",
+                    "id": "style",
+                    "name": "Style",
+                    "localized": false,
+                    "required": true,
+                    "validations": [
+                        {
+                            "in": [
+                                "primary",
+                                "secondary",
+                                "link"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Boolean",
+                    "id": "arrow",
+                    "name": "CTA Arrow",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "url": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "#"
+                    }
+                },
+                "style": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "primary"
+                    }
+                },
+                "arrow": {
+                    "widgetId": "boolean"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "action",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "bulletpoints_section_bulletpoints",
+            "name": "Bulletpoints Section Bulletpoints",
+            "description": "Model for 'bulletpoints' field used in 'bulletpoints_section' model",
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "description",
+                    "name": "Description",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "image",
+                    "name": "Bulletpoint image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "description": {
+                    "widgetId": "markdown"
+                },
+                "image": {},
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "bulletpoints_section_bulletpoints",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "bulletpoints_section",
+            "name": "Bulletpoints Section",
+            "description": null,
+            "displayField": "section_id",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "bulletpoints",
+                    "name": "Bulletpoints",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "bulletpoints_section_bulletpoints"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "bulletpoints": {
+                    "settings": {
+                        "helpText": "List of bulletpoints to show on About page"
+                    }
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "bulletpoints_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "category",
+            "name": "Category",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Integer",
+                    "id": "order",
+                    "name": "Order",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "seo",
+                    "name": "Seo",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "stackbit_page_meta"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "layout",
+                    "name": "Layout",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_url_path",
+                    "name": "URL Path",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "order": {
+                    "settings": {
+                        "helpText": "Numerical order of sorting categories"
+                    },
+                    "widgetId": "numberEditor"
+                },
+                "seo": {},
+                "layout": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "category",
+                        "readOnly": true
+                    }
+                },
+                "stackbit_url_path": {
+                    "settings": {
+                        "helpText": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\""
+                    },
+                    "widgetId": "singleLine"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "page",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "advanced",
+            "name": "Advanced Page",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "page_css_class",
+                    "name": "Page CSS class",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Boolean",
+                    "id": "white_header",
+                    "name": "White header",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "sections",
+                    "name": "Sections",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "hero_section",
+                                    "header_section",
+                                    "featured_products_section",
+                                    "featured_categories_section",
+                                    "testimonials_section",
+                                    "promotion_section",
+                                    "store_section",
+                                    "faq_section",
+                                    "bulletpoints_section",
+                                    "contact_section"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Link",
+                    "id": "seo",
+                    "name": "Seo",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "stackbit_page_meta"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "layout",
+                    "name": "Layout",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_url_path",
+                    "name": "URL Path",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "settings": {
+                        "helpText": "The title of the page"
+                    },
+                    "widgetId": "singleLine"
+                },
+                "page_css_class": {
+                    "widgetId": "singleLine"
+                },
+                "white_header": {
+                    "widgetId": "boolean"
+                },
+                "sections": {
+                    "settings": {
+                        "helpText": "Page sections"
+                    }
+                },
+                "seo": {},
+                "layout": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "advanced",
+                        "readOnly": true
+                    }
+                },
+                "stackbit_url_path": {
+                    "settings": {
+                        "helpText": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\""
+                    },
+                    "widgetId": "singleLine"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "page",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "config_params",
+            "name": "Site Configuration Params",
+            "description": "Model for 'params' field used in 'config' model",
+            "displayField": "domain",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "domain",
+                    "name": "Domain",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Symbol",
+                    "id": "palette",
+                    "name": "Color Palette",
+                    "localized": false,
+                    "required": true,
+                    "validations": [
+                        {
+                            "in": [
+                                "cyan",
+                                "green",
+                                "yellow"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "snipcart_api_key",
+                    "name": "Snipcart public API key",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "favicon",
+                    "name": "Favicon",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "logo_light",
+                    "name": "Logo Light",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "logo_dark",
+                    "name": "Logo Dark",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "hamburger_background_image",
+                    "name": "Hamburger Menu Background Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "bg_image_primary",
+                    "name": "Product Left Background Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Integer",
+                    "id": "bg_image_primary_opacity",
+                    "name": "Product Left Background Image Opacity",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "bg_image_secondary",
+                    "name": "Product Right Background Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "bg_image_product",
+                    "name": "Product Nav Background Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Array",
+                    "id": "main_menu",
+                    "name": "Navigation Links",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "action"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "footer_text",
+                    "name": "Footer Text",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "domain": {
+                    "settings": {
+                        "helpText": "The domain of your site, including the protocol, e.g. https://mysite.com/"
+                    },
+                    "widgetId": "singleLine"
+                },
+                "palette": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "green"
+                    }
+                },
+                "snipcart_api_key": {
+                    "widgetId": "singleLine"
+                },
+                "favicon": {},
+                "logo_light": {},
+                "logo_dark": {},
+                "hamburger_background_image": {},
+                "bg_image_primary": {},
+                "bg_image_primary_opacity": {
+                    "settings": {
+                        "helpText": "An integer between 0 and 100. A lower value makes the image more transparent"
+                    },
+                    "widgetId": "numberEditor"
+                },
+                "bg_image_secondary": {},
+                "bg_image_product": {},
+                "main_menu": {
+                    "settings": {
+                        "helpText": "List of navigation links"
+                    }
+                },
+                "footer_text": {
+                    "widgetId": "singleLine"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "config_params",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "config",
+            "name": "Site Configuration",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "baseURL",
+                    "name": "Base URL",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": true,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "params",
+                    "name": "Params",
+                    "localized": false,
+                    "required": true,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "config_params"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_file_path",
+                    "name": "Config File Path",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "settings": {
+                        "helpText": "Site title"
+                    },
+                    "widgetId": "singleLine"
+                },
+                "baseURL": {
+                    "settings": {
+                        "helpText": "Hostname (and path) to the root"
+                    },
+                    "widgetId": "singleLine"
+                },
+                "params": {
+                    "settings": {
+                        "helpText": "Site parameters"
+                    }
+                },
+                "stackbit_file_path": {
+                    "settings": {
+                        "helpText": "The file path of the configuration file",
+                        "defaultValue": "config.yaml",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "config",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "contact_section",
+            "name": "Contact Section",
+            "description": null,
+            "displayField": "section_id",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "image",
+                    "name": "Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Text",
+                    "id": "address",
+                    "name": "Address",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "phone",
+                    "name": "Phone",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "email",
+                    "name": "Email",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "mapUrl",
+                    "name": "Map URL",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "image": {},
+                "address": {
+                    "widgetId": "singleLine"
+                },
+                "phone": {
+                    "widgetId": "singleLine"
+                },
+                "email": {
+                    "widgetId": "singleLine"
+                },
+                "mapUrl": {
+                    "widgetId": "singleLine"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "contact_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "faq_section_questions",
+            "name": "FAQ Section Questions",
+            "description": "Model for 'questions' field used in 'faq_section' model",
+            "displayField": "question",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "question",
+                    "name": "Question",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "answer",
+                    "name": "Answer",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "question": {
+                    "widgetId": "singleLine"
+                },
+                "answer": {
+                    "widgetId": "markdown"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "faq_section_questions",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "faq_section",
+            "name": "FAQ Section",
+            "description": null,
+            "displayField": "section_id",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "questions",
+                    "name": "Questions",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "faq_section_questions"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "questions": {
+                    "settings": {
+                        "helpText": "List of questions to show on the FAQ page"
+                    }
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "faq_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "stackbit_page_meta_extra",
+            "name": "Page meta data Extra",
+            "description": "Model for 'extra' field used in 'stackbit_page_meta' model",
+            "displayField": "name",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "name",
+                    "name": "Name",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "value",
+                    "name": "Value",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "keyName",
+                    "name": "Key Name",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Boolean",
+                    "id": "relativeUrl",
+                    "name": "Relative Url",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "name": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": ""
+                    }
+                },
+                "value": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": ""
+                    }
+                },
+                "keyName": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "name"
+                    }
+                },
+                "relativeUrl": {
+                    "widgetId": "boolean"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "stackbit_page_meta_extra",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "stackbit_page_meta",
+            "name": "Page meta data",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "description",
+                    "name": "Description",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "robots",
+                    "name": "Robots",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Symbol",
+                        "validations": [
+                            {
+                                "in": [
+                                    "all",
+                                    "index",
+                                    "follow",
+                                    "noindex",
+                                    "nofollow",
+                                    "noimageindex",
+                                    "notranslate",
+                                    "none"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Array",
+                    "id": "extra",
+                    "name": "Extra",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "stackbit_page_meta_extra"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "settings": {
+                        "helpText": "The page title that goes into the <title> tag",
+                        "defaultValue": ""
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "description": {
+                    "settings": {
+                        "helpText": "The page description that goes into the <meta name=\"description\"> tag",
+                        "defaultValue": ""
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "robots": {
+                    "settings": {
+                        "helpText": "The items that go into the <meta name=\"robots\"> tag"
+                    }
+                },
+                "extra": {
+                    "settings": {
+                        "helpText": "Additional definition for specific meta tags such as open-graph, twitter, etc."
+                    }
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "stackbit_page_meta",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "featured_categories_section",
+            "name": "Categories Section",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "featured_categories",
+                    "name": "Featured Categories",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "category"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "featured_categories": {},
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "featured_categories_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "product",
+            "name": "Product",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "id",
+                    "name": "ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "description",
+                    "name": "Description",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "price",
+                    "name": "Price",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Integer",
+                    "id": "order",
+                    "name": "Order",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "default_thumbnail_image",
+                    "name": "Default Thumbnail Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "default_original_image",
+                    "name": "Default Original Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "category",
+                    "name": "Category",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "category"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Boolean",
+                    "id": "featured",
+                    "name": "Featured",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "seo",
+                    "name": "Seo",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "stackbit_page_meta"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "layout",
+                    "name": "Layout",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_url_path",
+                    "name": "URL Path",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "content",
+                    "name": "Content",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "id": {
+                    "widgetId": "singleLine"
+                },
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "description": {
+                    "widgetId": "singleLine"
+                },
+                "price": {
+                    "widgetId": "singleLine"
+                },
+                "order": {
+                    "settings": {
+                        "helpText": "numerical order of sorting products"
+                    },
+                    "widgetId": "numberEditor"
+                },
+                "default_thumbnail_image": {},
+                "default_original_image": {},
+                "category": {},
+                "featured": {
+                    "widgetId": "default-boolean-value",
+                    "settings": {
+                        "defaultValue": false
+                    }
+                },
+                "seo": {},
+                "layout": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "product",
+                        "readOnly": true
+                    }
+                },
+                "stackbit_url_path": {
+                    "settings": {
+                        "helpText": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\""
+                    },
+                    "widgetId": "singleLine"
+                },
+                "content": {
+                    "settings": {
+                        "helpText": "Page content"
+                    },
+                    "widgetId": "markdown"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "page",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "featured_products_section",
+            "name": "Featured Products Section",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Boolean",
+                    "id": "light_title",
+                    "name": "Light title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Boolean",
+                    "id": "icon",
+                    "name": "Show Heart Icon",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "featured_products",
+                    "name": "Featured Products",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "product"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "light_title": {
+                    "widgetId": "boolean"
+                },
+                "icon": {
+                    "widgetId": "boolean"
+                },
+                "featured_products": {},
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "featured_products_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "header_section",
+            "name": "Header section",
+            "description": null,
+            "displayField": "section_id",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "background_image",
+                    "name": "Background image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Text",
+                    "id": "headline",
+                    "name": "Headline",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "subtitle",
+                    "name": "Subtitle",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "background_image": {},
+                "headline": {
+                    "widgetId": "singleLine"
+                },
+                "subtitle": {
+                    "widgetId": "markdown"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "header_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "hero_section",
+            "name": "Hero Section",
+            "description": null,
+            "displayField": "section_id",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "background_image",
+                    "name": "Background Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Integer",
+                    "id": "background_image_opacity",
+                    "name": "Background image opacity",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "content",
+                    "name": "Content",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "actions",
+                    "name": "Action Buttons",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "action"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "background_image": {
+                    "settings": {
+                        "helpText": "The image shown in the background of the section."
+                    }
+                },
+                "background_image_opacity": {
+                    "settings": {
+                        "helpText": "An integer between 0 and 100. A lower value makes the image more transparent"
+                    },
+                    "widgetId": "numberEditor"
+                },
+                "content": {
+                    "settings": {
+                        "helpText": "The text content of the section."
+                    },
+                    "widgetId": "markdown"
+                },
+                "actions": {},
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "hero_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "promotion_section",
+            "name": "Promotion",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "subtitle",
+                    "name": "subtitle",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "image",
+                    "name": "Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "background_image",
+                    "name": "Background Image",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "type": "Link",
+                    "id": "cta",
+                    "name": "Call to action",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "action"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "subtitle": {
+                    "widgetId": "singleLine"
+                },
+                "image": {},
+                "background_image": {},
+                "cta": {},
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "promotion_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "store_section",
+            "name": "Store Section",
+            "description": null,
+            "displayField": "section_id",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "store_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "testimonials_section_testimonials_author",
+            "name": "Testimonials Testimonials Author",
+            "description": "Model for 'author' field used in 'testimonials_section_testimonials' model",
+            "displayField": "name",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "name",
+                    "name": "Name",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "location",
+                    "name": "Location",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "name": {
+                    "widgetId": "singleLine"
+                },
+                "location": {
+                    "widgetId": "singleLine"
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "testimonials_section_testimonials_author",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "testimonials_section_testimonials",
+            "name": "Testimonials Testimonials",
+            "description": "Model for 'testimonials' field used in 'testimonials_section' model",
+            "displayField": "text",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "text",
+                    "name": "Text",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Link",
+                    "id": "author",
+                    "name": "Author",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "testimonials_section_testimonials_author"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "text": {
+                    "widgetId": "singleLine"
+                },
+                "author": {},
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "testimonials_section_testimonials",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "testimonials_section",
+            "name": "Testimonials",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "section_id",
+                    "name": "Section ID",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "testimonials",
+                    "name": "Testimonials",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "testimonials_section_testimonials"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "type",
+                    "name": "Object Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "section_id": {
+                    "widgetId": "singleLine"
+                },
+                "title": {
+                    "widgetId": "singleLine"
+                },
+                "testimonials": {
+                    "settings": {
+                        "helpText": "A list of testimonials"
+                    }
+                },
+                "type": {
+                    "settings": {
+                        "helpText": "The type of the object",
+                        "defaultValue": "testimonials_section",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "object",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "home",
+            "name": "Home",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "page_css_class",
+                    "name": "Page CSS class",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Boolean",
+                    "id": "white_header",
+                    "name": "White header",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "sections",
+                    "name": "Sections",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "hero_section",
+                                    "header_section",
+                                    "featured_products_section",
+                                    "featured_categories_section",
+                                    "testimonials_section",
+                                    "promotion_section",
+                                    "store_section",
+                                    "faq_section",
+                                    "bulletpoints_section",
+                                    "contact_section"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Link",
+                    "id": "seo",
+                    "name": "Seo",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "stackbit_page_meta"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "layout",
+                    "name": "Layout",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_url_path",
+                    "name": "URL Path",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "settings": {
+                        "helpText": "The title of the page"
+                    },
+                    "widgetId": "singleLine"
+                },
+                "page_css_class": {
+                    "widgetId": "singleLine"
+                },
+                "white_header": {
+                    "widgetId": "boolean"
+                },
+                "sections": {
+                    "settings": {
+                        "helpText": "Page sections"
+                    }
+                },
+                "seo": {},
+                "layout": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "home",
+                        "readOnly": true
+                    }
+                },
+                "stackbit_url_path": {
+                    "settings": {
+                        "helpText": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\""
+                    },
+                    "widgetId": "singleLine"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "page",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        },
+        {
+            "id": "store",
+            "name": "Store",
+            "description": null,
+            "displayField": "title",
+            "fields": [
+                {
+                    "type": "Text",
+                    "id": "title",
+                    "name": "Title",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "page_css_class",
+                    "name": "Page CSS class",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Boolean",
+                    "id": "white_header",
+                    "name": "White header",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Array",
+                    "id": "sections",
+                    "name": "Sections",
+                    "localized": false,
+                    "required": false,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "validations": [
+                            {
+                                "linkContentType": [
+                                    "hero_section",
+                                    "header_section",
+                                    "featured_products_section",
+                                    "featured_categories_section",
+                                    "testimonials_section",
+                                    "promotion_section",
+                                    "store_section",
+                                    "faq_section",
+                                    "bulletpoints_section",
+                                    "contact_section"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Link",
+                    "id": "seo",
+                    "name": "Seo",
+                    "localized": false,
+                    "required": false,
+                    "validations": [
+                        {
+                            "linkContentType": [
+                                "stackbit_page_meta"
+                            ]
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Entry"
+                },
+                {
+                    "type": "Text",
+                    "id": "layout",
+                    "name": "Layout",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_url_path",
+                    "name": "URL Path",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "type": "Text",
+                    "id": "stackbit_model_type",
+                    "name": "Stackbit Model Type",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "editorInterfaceControls": {
+                "title": {
+                    "settings": {
+                        "helpText": "The title of the page"
+                    },
+                    "widgetId": "singleLine"
+                },
+                "page_css_class": {
+                    "widgetId": "singleLine"
+                },
+                "white_header": {
+                    "widgetId": "boolean"
+                },
+                "sections": {
+                    "settings": {
+                        "helpText": "Page sections"
+                    }
+                },
+                "seo": {},
+                "layout": {
+                    "widgetId": "default-field-value",
+                    "settings": {
+                        "defaultValue": "store",
+                        "readOnly": true
+                    }
+                },
+                "stackbit_url_path": {
+                    "settings": {
+                        "helpText": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\""
+                    },
+                    "widgetId": "singleLine"
+                },
+                "stackbit_model_type": {
+                    "settings": {
+                        "helpText": "Stackbit model type",
+                        "defaultValue": "page",
+                        "readOnly": true
+                    },
+                    "widgetId": "default-field-value"
+                }
+            }
+        }
+    ],
+    "content": [
+        {
+            "modelType": "config",
+            "modelName": "config",
+            "relPath": "config.yaml",
+            "data": {
+                "stackbit_model_type": "config",
+                "title": "Planty",
+                "baseURL": "/",
+                "params": {
+                    "type": "config_params",
+                    "palette": "green",
+                    "snipcart_api_key": "",
+                    "favicon": "images/favicon.png",
+                    "logo_light": "images/logo-white.svg",
+                    "logo_dark": "images/logo.svg",
+                    "hamburger_background_image": "/images/leaf-light-grey.svg",
+                    "bg_image_primary": "/images/header.jpg",
+                    "bg_image_primary_opacity": 60,
+                    "bg_image_secondary": "/images/leaf-light-grey.svg",
+                    "bg_image_product": "/images/leaf.svg",
+                    "main_menu": [
+                        {
+                            "type": "action",
+                            "title": "Store",
+                            "url": "/store",
+                            "style": "link",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "action",
+                            "title": "About",
+                            "url": "/about",
+                            "style": "link",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "action",
+                            "title": "FAQ",
+                            "url": "/faq",
+                            "style": "link",
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "footer_text": "Copyright 2021 Planty Inc. All rights reserved.",
+                    "stackbit_model_type": "object"
+                },
+                "stackbit_file_path": "config.yaml"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "advanced",
+            "relPath": "about.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "About",
+                "page_css_class": "gray-background",
+                "sections": [
+                    {
+                        "type": "header_section",
+                        "section_id": "header_section",
+                        "background_image": "/images/leaf-light-grey.svg",
+                        "headline": "We are Planty",
+                        "subtitle": "Well, not really. We’re [Snipcart](http://bit.ly/2YB7AUL)—a bunch of geeks from Québec City. Planty is a theme we built for [Stackbit](https://www.stackbit.com/), a killer JAMstack site-builder. To enable e-commerce on Planty, you’ll need to [sign up for Snipcart](http://bit.ly/2YzKmhP). Testing is forever free, no credit card required.",
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "bulletpoints_section",
+                        "section_id": "bulletpoints_section",
+                        "bulletpoints": [
+                            {
+                                "type": "bulletpoints_section_bulletpoints",
+                                "title": "We love plants",
+                                "description": "Now THAT is true, but we love web development even more. We talk about it on our blog, like, [a lot](http://bit.ly/2YA6999). We often craft live demos and open source these bad boys [on GitHub](https://github.com/snipcart). Matter of fact, this Planty theme [is open source too](https://github.com/snipcart/stackbit-theme-planty)! If you spot any bugs, open an issue, and we’ll fire our junior dev. Just kidding Michael, you’re good.",
+                                "image": "images/nan_talk.jpg",
+                                "stackbit_model_type": "object"
+                            },
+                            {
+                                "type": "bulletpoints_section_bulletpoints",
+                                "title": "We think plants are the future",
+                                "description": "Word. But good **code** _can_ solve a lots of problems, too. New _and_ old. That’s why we help beginners get started with web development through free content and tools, like this theme. We also believe [the JAMstack](https://jamstack.org/) might be one solid pillar on which we build that future.",
+                                "image": "images/team.jpg",
+                                "stackbit_model_type": "object"
+                            }
+                        ],
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "promotion_section",
+                        "section_id": "promotion_section",
+                        "title": "A new home interior for summer",
+                        "subtitle": "from $149.99",
+                        "image": "images/promo.jpg",
+                        "background_image": "/images/leaf.svg",
+                        "cta": {
+                            "type": "action",
+                            "title": "Discover",
+                            "url": "/store",
+                            "style": "primary",
+                            "arrow": true,
+                            "stackbit_model_type": "object"
+                        },
+                        "stackbit_model_type": "object"
+                    }
+                ],
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "About",
+                    "description": "This is the about page",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "About",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "This is the about page",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/header.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "About",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "This is the about page",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/header.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "advanced",
+                "stackbit_url_path": "/about"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "category",
+            "relPath": "category/bigplants.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "Big plants",
+                "order": 1,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Big plants",
+                    "description": "This is the store page",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Big plants",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "This is the store page",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant1-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Big plants",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "This is the store page",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant1-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "category",
+                "stackbit_url_path": "/category/bigplants"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "category",
+            "relPath": "category/cactuses.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "Cactuses",
+                "order": 2,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Cactuses",
+                    "description": "This is the store page",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Cactuses",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "This is the store page",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant2-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Cactuses",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "This is the store page",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant2-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "category",
+                "stackbit_url_path": "/category/cactuses"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "category",
+            "relPath": "category/europe.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "Plants from Europe",
+                "order": 3,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Plants from Europe",
+                    "description": "This is the store page",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Plants from Europe",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "This is the store page",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant4-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Plants from Europe",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "This is the store page",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant4-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "category",
+                "stackbit_url_path": "/category/europe"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "category",
+            "relPath": "category/summer.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "Summer plants",
+                "order": 4,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Summer plants",
+                    "description": "This is the store page",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Summer plants",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "This is the store page",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant8-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Summer plants",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "This is the store page",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant8-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "category",
+                "stackbit_url_path": "/category/summer"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "advanced",
+            "relPath": "faq.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "FAQ",
+                "page_css_class": "gray-background",
+                "sections": [
+                    {
+                        "type": "header_section",
+                        "section_id": "header_section",
+                        "background_image": "/images/leaf-light-grey.svg",
+                        "headline": "Behold our FAQ",
+                        "subtitle": "All right, friends. Let’s do this. This section will cover basic, frequently asked questions for e-commerce merchants.",
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "faq_section",
+                        "section_id": "faq_section",
+                        "questions": [
+                            {
+                                "type": "faq_section_questions",
+                                "question": "How long does shipping take?",
+                                "answer": "Now that’s a frequent one all right, ain’t it? Your answer to this should *manage customer expectations*. Just like [a good checkout flow](http://bit.ly/2YCN3iG) should. Tell them the truth:\n\n  - US shipping will take between 3 to 5 business days.\n  - International shipping will take between 5 and 10 business days.\n  - Mars shipping will be automatically redirected to Elon Musk’s Twitter account.",
+                                "stackbit_model_type": "object"
+                            },
+                            {
+                                "type": "faq_section_questions",
+                                "question": "How do refunds and returns work?",
+                                "answer": "It happens. Even the most beautiful of plants will disappoint *someone*. Again, tell it like it is:\n\n  - All discounted items sales are final.\n  - If you’d like another version of your item, please use the return label. Instructions are printed on its back.\n  - If your item is damaged or not functioning correctly, email us at info@planty.com, and we’ll refund you + send you a new one ASAP!",
+                                "stackbit_model_type": "object"
+                            },
+                            {
+                                "type": "faq_section_questions",
+                                "question": "How do you handle sensitive customer information?",
+                                "answer": "[GDPR](https://media3.giphy.com/media/1FMaabePDEfgk/giphy.gif?cid=790b76115d1fc3ed7656643632f4131f&rid=giphy.gif), am I right? Make sure you’re as transparent as possible with your data handling process. Or, if you’re using Snipcart, just refer to [our ToS and DPA](http://bit.ly/2YJwlyt).",
+                                "stackbit_model_type": "object"
+                            },
+                            {
+                                "type": "faq_section_questions",
+                                "question": "Rapid-fire questions",
+                                "answer": "Q: Why is this Planty theme so beautiful? <br /> A: We hired our first designer a couple of months ago. <br /><br /> Q: Why did you build a theme for Stackbit? <br /> A: We believe in Stackbit’s promise of opening up the JAMstack to more developers. Plus, we trust these folks. [Read more about Stackbit](http://bit.ly/2YAvGix). <br /><br /> Q: How many people work at Snipcart? <br /> A: Not a lot! We’re a small, bootstrapped team of eight human beings. Michael might be a robot, though. <br /><br /> Q: Why is Snipcart based in Québec City? <br /> A: Have you been here? It’s beaaautiful! <br /><br /> Q: What’s the meaning of life? <br /> A: We’re not quite sure. But building useful products with people we love feels meaningful enough.",
+                                "stackbit_model_type": "object"
+                            }
+                        ],
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "contact_section",
+                        "section_id": "contact_section",
+                        "image": "images/promo.jpg",
+                        "address": "226 rue St-Joseph E, Québec, QC, Canada, G1K 3A9",
+                        "phone": "+1-202-555-0112",
+                        "email": "geeks@snipcart.com",
+                        "mapUrl": "https://goo.gl/maps/g6za62bN9BHrNTVt5",
+                        "stackbit_model_type": "object"
+                    }
+                ],
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "FAQ",
+                    "description": "This is the faq page",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "FAQ",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "This is the faq page",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "FAQ",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "This is the faq page",
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "advanced",
+                "stackbit_url_path": "/faq"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "home",
+            "relPath": "_index.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "Home",
+                "white_header": true,
+                "sections": [
+                    {
+                        "type": "hero_section",
+                        "section_id": "hero_section",
+                        "background_image": "images/header.jpg",
+                        "background_image_opacity": 65,
+                        "content": "# Real, beautiful plants right to your door\nDon't forget to add your Snipcart API key to the site's configuration to enable Cart actions.",
+                        "actions": [
+                            {
+                                "type": "action",
+                                "title": "See all items",
+                                "url": "/store",
+                                "style": "primary",
+                                "arrow": true,
+                                "stackbit_model_type": "object"
+                            }
+                        ],
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "featured_products_section",
+                        "title": "Best sellers",
+                        "section_id": "best_sellers_section",
+                        "light_title": true,
+                        "icon": true,
+                        "featured_products": [
+                            "content/products/plant1.md",
+                            "content/products/plant3.md",
+                            "content/products/plant5.md",
+                            "content/products/plant7.md"
+                        ],
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "featured_categories_section",
+                        "section_id": "featured_categories_section",
+                        "featured_categories": [
+                            "content/category/bigplants.md",
+                            "content/category/cactuses.md"
+                        ],
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "testimonials_section",
+                        "section_id": "testimonials_section",
+                        "title": "Testimonials",
+                        "testimonials": [
+                            {
+                                "type": "testimonials_section_testimonials",
+                                "text": "I didn't know the Snipcart guys were into herbs as well! How beautiful is that Planty theme. I'm going to launch a killer JAMstack e-commerce store using this for sure.",
+                                "author": {
+                                    "type": "testimonials_section_testimonials_author",
+                                    "name": "John Dope",
+                                    "location": "Colorado, USA",
+                                    "stackbit_model_type": "object"
+                                },
+                                "stackbit_model_type": "object"
+                            },
+                            {
+                                "type": "testimonials_section_testimonials",
+                                "text": "Well I'll be d*mned. These plants really ARE greener than any of my recruits.",
+                                "author": {
+                                    "type": "testimonials_section_testimonials_author",
+                                    "name": "Major Payne",
+                                    "location": "VA, USA",
+                                    "stackbit_model_type": "object"
+                                },
+                                "stackbit_model_type": "object"
+                            }
+                        ],
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "promotion_section",
+                        "section_id": "promotion_section",
+                        "title": "A new home interior for summer",
+                        "subtitle": "from $149.99",
+                        "image": "images/promo.jpg",
+                        "background_image": "images/leaf.svg",
+                        "cta": {
+                            "type": "action",
+                            "title": "Discover",
+                            "url": "/store",
+                            "style": "secondary",
+                            "arrow": true,
+                            "stackbit_model_type": "object"
+                        },
+                        "stackbit_model_type": "object"
+                    }
+                ],
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Planty Theme",
+                    "description": "The preview of the Planty theme",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Planty Theme",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "The preview of the Planty theme",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/header.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Planty Theme",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "The preview of the Planty theme",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/header.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "home",
+                "stackbit_url_path": "/"
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant1.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "1",
+                "title": "Nulla suscipit",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit velit lectus, vitae efficitur quam mollis eget. Integer porta at nisl eget tincidunt.",
+                "price": "49.40",
+                "order": 1,
+                "default_thumbnail_image": "images/plant1.jpg",
+                "default_original_image": "images/plant1-lg.jpg",
+                "category": "content/category/bigplants.md",
+                "featured": true,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Nulla suscipit",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Nulla suscipit",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant1-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Nulla suscipit",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant1-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant1",
+                "content": "\n# Nulla suscipit\n\nAliquam quis laoreet lectus. Proin non mattis nulla, quis posuere mi. Mauris venenatis, magna at pellentesque commodo, lectus risus vehicula elit, nec dignissim nisl sapien id leo. Nulla non pretium metus, vitae finibus lectus. Aliquam in posuere risus. Curabitur ultrices ornare magna porttitor commodo. Curabitur eu tempor orci, sed pretium quam. Vestibulum condimentum, arcu nec pulvinar fringilla, lorem odio varius arcu, in porta tellus eros sed neque. Suspendisse efficitur eget erat sit amet efficitur. Proin maximus nibh eu sapien consequat, non porttitor risus consequat. Donec maximus odio sed nibh convallis luctus."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant2.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "2",
+                "title": "Integer porta",
+                "description": "Suspendisse efficitur eget erat sit amet efficitur.",
+                "price": "99.00",
+                "order": 2,
+                "default_thumbnail_image": "images/plant2.jpg",
+                "default_original_image": "images/plant2-lg.jpg",
+                "category": "content/category/cactuses.md",
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Integer porta",
+                    "description": "Suspendisse efficitur eget erat sit amet efficitur",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Integer porta",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Suspendisse efficitur eget erat sit amet efficitur",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant2-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Integer porta",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Suspendisse efficitur eget erat sit amet efficitur",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant2-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant2",
+                "content": "\n# Integer porta\n\nAliquam quis laoreet lectus. Proin non mattis nulla, quis posuere mi. Mauris venenatis, magna at pellentesque commodo, lectus risus vehicula elit, nec dignissim nisl sapien id leo. Nulla non pretium metus, vitae finibus lectus. Aliquam in posuere risus."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant3.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "3",
+                "title": "Curabitur eu tempor",
+                "description": "Nulla non pretium metus, vitae finibus lectus.",
+                "price": "150.00",
+                "order": 3,
+                "default_thumbnail_image": "images/plant3.jpg",
+                "default_original_image": "images/plant3-lg.jpg",
+                "category": "content/category/cactuses.md",
+                "featured": true,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Curabitur eu tempor",
+                    "description": "Nulla non pretium metus, vitae finibus lectus",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Curabitur eu tempor",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Nulla non pretium metus, vitae finibus lectus",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant3-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Curabitur eu tempor",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Nulla non pretium metus, vitae finibus lectus",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant3-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant3",
+                "content": "\n# Curabitur eu tempor\n\nAliquam quis laoreet lectus. Proin non mattis nulla, quis posuere mi. Mauris venenatis, magna at pellentesque commodo, lectus risus vehicula elit, nec dignissim nisl sapien id leo. Nulla non pretium metus, vitae finibus lectus. Aliquam in posuere risus. Curabitur ultrices ornare magna porttitor commodo. Curabitur eu tempor orci, sed pretium quam. Vestibulum condimentum, arcu nec pulvinar fringilla, lorem odio varius arcu, in porta tellus eros sed neque. Suspendisse efficitur eget erat sit amet efficitur. Proin maximus nibh eu sapien consequat, non porttitor risus consequat. Donec maximus odio sed nibh convallis luctus."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant4.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "4",
+                "title": "Cras molestie",
+                "description": "Maecenas pretium blandit ex id lobortis.",
+                "price": "24.99",
+                "order": 4,
+                "default_thumbnail_image": "images/plant4.jpg",
+                "default_original_image": "images/plant4-lg.jpg",
+                "category": "content/category/cactuses.md",
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Cras molestie",
+                    "description": "Maecenas pretium blandit ex id lobortis",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Cras molestie",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Maecenas pretium blandit ex id lobortis",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant4-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Cras molestie",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Maecenas pretium blandit ex id lobortis",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant4-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant4",
+                "content": "\n# Cras molestie\n\nCras molestie faucibus ipsum ut vulputate. Suspendisse potenti. Donec nec diam odio. Nam ut tempus odio. Vivamus at vehicula felis. Ut ex ante, feugiat at risus eget, facilisis iaculis ex. Suspendisse sagittis sed turpis nec tincidunt. Suspendisse ac venenatis nibh. Pellentesque non maximus lacus, in commodo sapien. Nulla facilisi. Donec finibus, augue in sagittis auctor, mi neque convallis arcu, quis volutpat massa dolor id purus. Suspendisse et lobortis dui. Maecenas pretium blandit ex id lobortis. Vestibulum eget sapien vitae nibh porttitor bibendum sed eget nibh."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant5.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "5",
+                "title": "Vestibulum eget",
+                "description": "Donec finibus, augue in sagittis auctor, mi neque convallis arcu, quis volutpat massa dolor id purus.",
+                "price": "220.00",
+                "order": 5,
+                "default_thumbnail_image": "images/plant5.jpg",
+                "default_original_image": "images/plant5-lg.jpg",
+                "category": "content/category/bigplants.md",
+                "featured": true,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Vestibulum eget",
+                    "description": "Donec finibus, augue in sagittis auctor, mi neque convallis arcu",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Vestibulum eget",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Donec finibus, augue in sagittis auctor, mi neque convallis arcu",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant5-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Vestibulum eget",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Donec finibus, augue in sagittis auctor, mi neque convallis arcu",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant5-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant5",
+                "content": "\n# Vestibulum eget\n\nCras molestie faucibus ipsum ut vulputate. Suspendisse potenti. Donec nec diam odio. Nam ut tempus odio. Vivamus at vehicula felis. Ut ex ante, feugiat at risus eget, facilisis iaculis ex. Suspendisse sagittis sed turpis nec tincidunt. Suspendisse ac venenatis nibh. Pellentesque non maximus lacus, in commodo sapien. Nulla facilisi. Donec finibus, augue in sagittis auctor, mi neque convallis arcu, quis volutpat massa dolor id purus. Suspendisse et lobortis dui. Maecenas pretium blandit ex id lobortis. Vestibulum eget sapien vitae nibh porttitor bibendum sed eget nibh."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant6.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "6",
+                "title": "Donec finibus",
+                "description": "Cras molestie faucibus ipsum ut vulputate.",
+                "price": "100.00",
+                "order": 6,
+                "default_thumbnail_image": "images/plant6.jpg",
+                "default_original_image": "images/plant6-lg.jpg",
+                "category": "content/category/bigplants.md",
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Donec finibus",
+                    "description": "Cras molestie faucibus ipsum ut vulputate",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Donec finibus",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Cras molestie faucibus ipsum ut vulputate",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant6-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Donec finibus",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Cras molestie faucibus ipsum ut vulputate",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant6-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant6",
+                "content": "\n# Donec finibus\n\nCras molestie faucibus ipsum ut vulputate. Suspendisse potenti. Donec nec diam odio. Nam ut tempus odio. Vivamus at vehicula felis. Ut ex ante, feugiat at risus eget, facilisis iaculis ex. Suspendisse sagittis sed turpis nec tincidunt. Suspendisse ac venenatis nibh. Pellentesque non maximus lacus, in commodo sapien. Nulla facilisi. Donec finibus, augue in sagittis auctor, mi neque convallis arcu, quis volutpat massa dolor id purus. Suspendisse et lobortis dui. Maecenas pretium blandit ex id lobortis. Vestibulum eget sapien vitae nibh porttitor bibendum sed eget nibh."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant7.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "7",
+                "title": "Sed consectetur",
+                "description": "Fusce sed tortor id diam rhoncus accumsan.",
+                "price": "18.90",
+                "order": 7,
+                "default_thumbnail_image": "images/plant7.jpg",
+                "default_original_image": "images/plant7-lg.jpg",
+                "category": "content/category/bigplants.md",
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Sed consectetur",
+                    "description": "Fusce sed tortor id diam rhoncus accumsan",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Sed consectetur",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Fusce sed tortor id diam rhoncus accumsan",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant7-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Sed consectetur",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Fusce sed tortor id diam rhoncus accumsan",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant7-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant7",
+                "content": "\n# Sed consectetur\n\nSed consectetur eleifend neque. Morbi fringilla velit neque, quis aliquet diam rutrum eget. Praesent dui leo, iaculis non auctor sed, accumsan at felis. Suspendisse eu pretium justo. Curabitur et velit quis justo elementum iaculis. Fusce sed tortor id diam rhoncus accumsan. In cursus sagittis eros non congue."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant8.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "8",
+                "title": "Fusce sed",
+                "description": "In cursus sagittis eros non congue.",
+                "price": "50.00",
+                "order": 8,
+                "default_thumbnail_image": "images/plant8.jpg",
+                "default_original_image": "images/plant8-lg.jpg",
+                "category": "content/category/summer.md",
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Fusce sed",
+                    "description": "In cursus sagittis eros non congue",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Fusce sed",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "In cursus sagittis eros non congue",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant8-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Fusce sed",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "In cursus sagittis eros non congue",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant8-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant8",
+                "content": "\n# Fusce sed\n\nSed consectetur eleifend neque. Morbi fringilla velit neque, quis aliquet diam rutrum eget. Praesent dui leo, iaculis non auctor sed, accumsan at felis. Suspendisse eu pretium justo. Curabitur et velit quis justo elementum iaculis. Fusce sed tortor id diam rhoncus accumsan. In cursus sagittis eros non congue."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "product",
+            "relPath": "products/plant9.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "id": "9",
+                "title": "Fusce sagittis",
+                "description": "Nulla diam diam, maximus gravida efficitur eu, ultricies quis orci.",
+                "price": "400.00",
+                "order": 9,
+                "default_thumbnail_image": "images/plant9.jpg",
+                "default_original_image": "images/plant9-lg.jpg",
+                "category": "content/category/cactuses.md",
+                "featured": true,
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Fusce sagittis",
+                    "description": "Nulla diam diam, maximus gravida efficitur eu, ultricies quis orci",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Fusce sagittis",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "Nulla diam diam, maximus gravida efficitur eu, ultricies quis orci",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/plant9-lg.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Fusce sagittis",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "Nulla diam diam, maximus gravida efficitur eu, ultricies quis orci",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/plant9-lg.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "product",
+                "stackbit_url_path": "/products/plant9",
+                "content": "\n# Fusce sagittis\n\nVestibulum blandit sem mattis metus blandit pharetra at at ipsum. Vestibulum luctus quis turpis ac sollicitudin. Etiam ultricies pharetra velit. Nulla diam diam, maximus gravida efficitur eu, ultricies quis orci. Donec congue pharetra massa, ut venenatis nibh volutpat vel. Quisque eu sapien arcu. Nunc feugiat dictum tincidunt. Etiam sodales tellus tempus auctor vehicula. Praesent eget sapien dignissim, vehicula quam id, vehicula libero. Fusce sagittis gravida nulla ac bibendum. Duis lacinia egestas fringilla. Fusce quis metus semper, molestie massa finibus, laoreet magna. Aliquam gravida ipsum id nisl efficitur aliquam."
+            }
+        },
+        {
+            "modelType": "page",
+            "modelName": "store",
+            "relPath": "store.md",
+            "data": {
+                "stackbit_model_type": "page",
+                "title": "Store",
+                "sections": [
+                    {
+                        "type": "store_section",
+                        "section_id": "store_section",
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "featured_products_section",
+                        "title": "Best sellers",
+                        "section_id": "featured_products_section",
+                        "icon": true,
+                        "featured_products": [
+                            "content/products/plant1.md",
+                            "content/products/plant3.md",
+                            "content/products/plant5.md",
+                            "content/products/plant7.md"
+                        ],
+                        "stackbit_model_type": "object"
+                    },
+                    {
+                        "type": "promotion_section",
+                        "section_id": "promotion_section",
+                        "title": "A new home interior for summer",
+                        "subtitle": "from $149.99",
+                        "image": "images/promo.jpg",
+                        "background_image": "/images/leaf.svg",
+                        "cta": {
+                            "type": "action",
+                            "title": "Discover",
+                            "url": "/store",
+                            "style": "secondary",
+                            "arrow": true,
+                            "stackbit_model_type": "object"
+                        },
+                        "stackbit_model_type": "object"
+                    }
+                ],
+                "seo": {
+                    "type": "stackbit_page_meta",
+                    "title": "Store",
+                    "description": "This is the store page",
+                    "extra": [
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:type",
+                            "value": "website",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:title",
+                            "value": "Store",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:description",
+                            "value": "This is the store page",
+                            "keyName": "property",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "og:image",
+                            "value": "images/header.jpg",
+                            "keyName": "property",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:card",
+                            "value": "summary_large_image",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:title",
+                            "value": "Store",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:description",
+                            "value": "This is the store page",
+                            "stackbit_model_type": "object"
+                        },
+                        {
+                            "type": "stackbit_page_meta_extra",
+                            "name": "twitter:image",
+                            "value": "images/header.jpg",
+                            "relativeUrl": true,
+                            "stackbit_model_type": "object"
+                        }
+                    ],
+                    "stackbit_model_type": "object"
+                },
+                "layout": "store",
+                "stackbit_url_path": "/store"
+            }
+        }
+    ]
+}
